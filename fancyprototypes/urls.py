@@ -15,9 +15,9 @@ import welcomeapp.views
 urlpatterns = [
     url(r'^$', welcomeapp.views.index, name='index'),
     url(r'^home$', welcomeapp.views.index, name='home'),
+    url(r'^about$', welcomeapp.views.about, name='about'),
     path('', views.home, name='home'),
     path('contact/', views.contact, name='contact'),
-    path('about/', views.about, name='about'),
     path('login/',
          LoginView.as_view
          (
